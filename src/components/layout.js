@@ -14,7 +14,7 @@ import "./bootstrap.min.css"
 import "./layout.css"
 
 const Layout= ({children}) => (
-    <div>
+  <div>
     <Navbar/>
     {children}
     <Footer/>
@@ -22,7 +22,7 @@ const Layout= ({children}) => (
   )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children:PropTypes.node.isRequired,
 }
 
 export default Layout

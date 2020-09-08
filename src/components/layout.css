@@ -7,3 +7,6 @@
 .footer{
   background-color: #2C3335;
 }
+.hero-background{
+  min-height:100vh;
+}

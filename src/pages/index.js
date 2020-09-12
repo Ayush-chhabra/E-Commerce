@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import HeroSection from "../components/Reuseable/HeroSection"
 import InfoBlock from "../components/Reuseable/InfoBlock"
 import DualInfoblock from "../components/Reuseable/DualInfoblock"
+import Coursecart from "../components/Cart/Coursecart"
+
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home"/>
@@ -16,6 +18,7 @@ const IndexPage = ({data}) => (
     heroclass="hero-background"
     />
     <InfoBlock heading="About Us"/>
+    <Coursecart courses={data.mycourses} />
     <DualInfoblock heading="Our Team"/> 
   </Layout>
 )
@@ -40,7 +43,7 @@ export const query =graphql`
         }
         image{
           fixed(width:200,height:120){
-            src
+            ...GatsbyContentfulFixed_tracedSVG
           }
         }
       }

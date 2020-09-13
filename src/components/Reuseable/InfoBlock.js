@@ -6,7 +6,7 @@ export default function InfoBlock({heading}) {
     return (
         <section className="bg-theme my-5 py-4">
             <div className="container">
-                <Heading title={heading}/>
+                <Heading className="display-4 text-white font-weight-bold" title={heading}/>
                 <div className="row">
                     <div className="col-10 col-sm-8 mx-auto text-center">
                         <p className="lead text-white mb-4">

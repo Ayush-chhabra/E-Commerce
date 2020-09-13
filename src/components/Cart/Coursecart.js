@@ -14,7 +14,7 @@ export default class Coursecart extends Component {
         return (
             <section className="py-5">
             <div className="container">
-                <Heading title="Courses"/>
+                <Heading className="display-4 text-dark font-weight-bold" title="Courses"></Heading>
                   <div className="row">
                     {this.state.mycourses.map(({node})=>{
                         return(

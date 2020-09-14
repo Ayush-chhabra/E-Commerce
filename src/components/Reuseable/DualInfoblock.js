@@ -4,7 +4,7 @@ import Heading from "./Heading"
 
 export default function DualInfoblock({heading}) {
     return (
-        <div className="my-4 py-4 bg-theme">
+        <div className=" py-4 bg-theme">
             <div className="container">
              <Heading className="display-4 text-white font-weight-bold" title={heading}/>
              <div className="row">
@@ -24,11 +24,11 @@ export default function DualInfoblock({heading}) {
                 </div>    
                 <div className="col-4">
                     <div className="card">
-                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" className="card-img-top card-img" alt="image" />
-                    <div className="card-body">
-                    <h5 className="card-title">Just click photos</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-warning">{heading}</a>
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" className="card-img-top card-img mx-auto" alt="image" />
+                    <div className="card-body text-center">
+                    <h4 className="card-title text-center">Just click photos</h4>
+                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/about" className="btn btn-warning">{heading}</a>
                     </div>
                     </div>
                 </div>

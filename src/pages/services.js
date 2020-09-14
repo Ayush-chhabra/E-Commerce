@@ -5,19 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from "../components/Reuseable/HeroSection"
 import InfoBlock from "../components/Reuseable/InfoBlock"
-import Contact from "../components/Contact/Contact"
+import DualInfoblock from "../components/Reuseable/DualInfoblock"
+import TeamPhotoSection from "../components/About/TeamPhotoSection"
 
-const ContactPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
     <SEO title="Home"/>
     <HeroSection 
     img ={data.img.childImageSharp.fluid}
-    title="Contact Us"
+    title="Our Services"
     subtitle=""
     heroclass="about-background"
-    />
-    <InfoBlock heading="How can we help?"/>
-    <Contact/>
+    /> 
+    <InfoBlock heading="About Us"/>
   </Layout>
 )
 
@@ -32,4 +32,4 @@ export const query =graphql`
   }
 }
 `
-export default ContactPage
+export default ServicePage

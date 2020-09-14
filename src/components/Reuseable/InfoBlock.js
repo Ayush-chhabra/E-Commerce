@@ -4,9 +4,9 @@ import {Link} from 'gatsby'
 
 export default function InfoBlock({heading}) {
     return (
-        <section className="bg-theme my-5 py-4">
+        <section className="bg-theme py-4">
             <div className="container">
-                <Heading className="display-4 text-white font-weight-bold" title={heading}/>
+        {/*<Heading className="display-4 text-white font-weight-bold" title={heading}/>*/}
                 <div className="row">
                     <div className="col-10 col-sm-8 mx-auto text-center">
                         <p className="lead text-white mb-4">
@@ -26,7 +26,7 @@ export default function InfoBlock({heading}) {
                         like Aldus PageMaker including versions of Lorem Ipsum.
                         </p> 
                         <Link to="/about"/>
-                            <button className="btn btn-warning btn-lg">{heading}</button>   
+                            <button className="btn btn-warning btn-lg">Know More</button>   
                     </div>
                 </div>
             </div>

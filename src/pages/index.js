@@ -13,7 +13,7 @@ const IndexPage = ({data}) => (
     <SEO title="Home"/>
     <HeroSection 
     img ={data.img.childImageSharp.fluid}
-    title=""
+    title="LEARN CODE ONLINE"
     subtitle=""
     heroclass="hero-background"
     />
@@ -24,7 +24,7 @@ const IndexPage = ({data}) => (
 )
 export const query =graphql`
 {
-  img: file(relativePath: {eq: "heromain.png"}) {
+  img: file(relativePath: {eq:"back.png"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG

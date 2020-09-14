@@ -4,7 +4,8 @@ import Heading from '../Reuseable/Heading'
 export default function Contact() {
     return (
         <div className="py-3">
-            <Heading  className="display-4 text-dark font-weight-bold" title="Contact Us"></Heading>
+            <Heading  className="display-4 text-dark font-weight-bold" title="Enter you Query"></Heading>
+            <Heading  className="display-5 text-secondary " title="We will get back to you shortly....."></Heading>
             <div className="col-10 col-sm-8 mx-auto">
                 <form action ="https://formspree.io/ayushchhabra0744@gmail.com" method="POST">
                     <div className="form-group">

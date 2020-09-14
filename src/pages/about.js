@@ -13,19 +13,20 @@ const AboutPage = ({data}) => (
     <SEO title="Home"/>
     <HeroSection 
     img ={data.img.childImageSharp.fluid}
-    title=""
+    title="About Us"
     subtitle=""
     heroclass="about-background"
     />
-    <DualInfoblock heading="A message from CEO"/> 
+    
     <InfoBlock heading="About Us"/>
     <TeamPhotoSection/>   
+    <DualInfoblock heading="A message from CEO"/>
   </Layout>
 )
 
 export const query =graphql`
 {
-  img: file(relativePath: {eq: "about.png"}) {
+  img: file(relativePath: {eq: "back.png"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG

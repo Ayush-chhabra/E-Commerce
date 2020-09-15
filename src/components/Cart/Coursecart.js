@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 const getCaty= items=>{
     let holdItems =items.map(items=>{
-        return items.node.category
+        return items.node.category;
     })
  let holdcategories = new Set(holdItems)
  let categories = Array.from(holdcategories)
@@ -23,7 +23,7 @@ export default class Coursecart extends Component {
     }
 
     catyClicked=category=>{
-        let keepItsafe=[...this.state.course]
+        let keepItsafe=[...this.state.courses]
 
         if(category==='All'){
             this.setState(()=>{
@@ -65,7 +65,7 @@ export default class Coursecart extends Component {
                             <div className="flex-grow-1 px-3 mb-5">
                                 <div className="d-flex ">
                                 <h6 className="mb-0">{node.title}</h6>
-                                <h6 className="mb-0 text-success ml-5">$ {node.price}</h6>
+                                <h6 className="mb-0 text-success ml-3">$ {node.price}</h6>
                                 </div>
                             <p className="text-muted">
                             <small>{node.description.description}</small>

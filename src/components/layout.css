@@ -25,3 +25,33 @@
   padding: 8px 35px;
 }
 
+@media (max-width:768px)
+{
+.join{
+  width: 100%;
+  height: auto;
+  padding: 3px;
+}
+.head{
+  font-size: 50px;
+}
+.course{
+  display:flex;
+  flex-direction: column;
+}
+.course-text{
+  text-align: center;
+}
+
+}
+@media (min-width:768px)
+{
+.course{
+  display:flex;
+}
+.join{
+  width: 100px;
+  height: auto;
+  padding: 3px;
+}
+}

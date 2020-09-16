@@ -41,7 +41,7 @@ export default class Coursecart extends Component {
         return (
             <section className="py-5">
             <div className="container">
-                <Heading className="display-4 text-dark font-weight-bold" title="Courses"></Heading>
+                <Heading className="display-4 text-dark font-weight-bold head" title="Courses"></Heading>
                 <div className="row my-3">
                     <div className="col-10 mx-auto text-center">
                     {this.state.mycategories.map((category,index)=>{
@@ -56,27 +56,25 @@ export default class Coursecart extends Component {
                 }
                     </div>
                 </div>
-                  <div className="row">
+                   <div className="row">
                     {this.state.mycourses.map(({node})=>{
                         return(
                             <div key={node.id}
-                            className="col-11 col-md-6 d-flex my-3 mx-auto">
-                            <Img fixed={node.image.fixed}/>
+                            className="col-8 col-md-6 mx-auto course">
+                            <Img className="mx-auto" fixed={node.image.fixed}/>
                             <div className="flex-grow-1 px-3 mb-5">
-                                <div className="d-flex ">
-                                <h6 className="mb-0">{node.title}</h6>
-                                <h6 className="mb-0 text-success ml-3">$ {node.price}</h6>
-                                </div>
-                            <p className="text-muted">
+                                <h6 className="mb-0 course-text">{node.title}</h6>
+                            <p className="text-muted course-text">
                             <small>{node.description.description}</small>
                             </p>    
+                            <h6 className="mb-2 text-success course-text">$ {node.price}</h6>
                             <button data-item-id={node.id}
                             data-item-name={node.title}
                             data-item-price={node.price}
                         
                             data-item-url="https://firstecommerce.netlify.app/"
                             data-item-image={node.image.fixed.src}
-                            className="btn btn-warning snipcart-add-item">Join now</button>
+                            className="btn btn-warning snipcart-add-item join">Join now</button>
                             </div>
                             </div>
                         )

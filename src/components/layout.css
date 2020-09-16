@@ -35,6 +35,13 @@
 .head{
   font-size: 50px;
 }
+.head2{
+  font-size: 20px;
+}
+.head3{
+  font-size: 40px;
+  margin-bottom:auto;
+}
 .course{
   display:flex;
   flex-direction: column;
@@ -49,9 +56,5 @@
 .course{
   display:flex;
 }
-.join{
-  width: 100px;
-  height: auto;
-  padding: 3px;
-}
+
 }
